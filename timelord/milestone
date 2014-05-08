@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python ~/Workspace/timelord/timelord/milestone.py "$1"
