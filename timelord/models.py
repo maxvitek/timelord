@@ -35,5 +35,5 @@ class Milestone(Base):
     milestone = Column(String(250))
 
     def __repr__(self):
-        return '<Milestone(User: %s, Description: "%s")>' % (getpass.getuser(), self.milestone[:20])
+        return '<Milestone(%s)>' % (str(self.datetime))
 
