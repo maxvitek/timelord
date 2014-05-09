@@ -20,7 +20,7 @@ class WorkTime(Base):
     __tablename__ = 'work_time'
 
     id = Column(Integer, primary_key=True)
-    datetime = Column(DateTime, default=datetime.datetime.now())
+    datetime = Column(DateTime, default=datetime.datetime.now)
     work = Column(Integer, default=1)
 
     def __repr__(self):
@@ -31,7 +31,7 @@ class Milestone(Base):
     __tablename__ = 'milestone'
 
     id = Column(Integer, primary_key=True)
-    datetime = Column(DateTime, default=datetime.datetime.now())
+    datetime = Column(DateTime, default=datetime.datetime.now)
     milestone = Column(String(250))
 
     def __repr__(self):
